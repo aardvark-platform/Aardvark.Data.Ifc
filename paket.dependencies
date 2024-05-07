@@ -6,21 +6,26 @@ nuget Aardvark.Build                    ~> 1.0.19
 
 nuget FSharp.Core                       >= 5.0.1 lowest_matching: true
 
-// Aardvark Base                        
+// Aardvark Base
 nuget Aardvark.Base                     ~> 5.2.4
 nuget Aardvark.Base.FSharp              ~> 5.2.4
 nuget Aardvark.Base.Incremental         ~> 5.2.4
 
-// Aardvark Algodat                     
+// Aardvark Algodat
 nuget Aardvark.Geometry.PolyMesh        ~> 5.3.0
 
+// XBim does not have proper version constraints so we declare and reference everything explicitly
 nuget Xbim.Ifc                          ~> 5.1.341
 nuget Xbim.Ifc2x3                       ~> 5.1.341
 nuget Xbim.Ifc4                         ~> 5.1.341
+nuget Xbim.IO.Esent                     ~> 5.1.341
 nuget Xbim.IO.MemoryModel               ~> 5.1.341
 nuget Xbim.Essentials                   ~> 5.1.341
 nuget Xbim.Common                       ~> 5.1.341
+nuget Xbim.Tessellator                  ~> 5.1.341
 nuget Xbim.Geometry                     ~> 5.1.437
+nuget Xbim.Geometry.Engine.Interop      ~> 5.1.437
+nuget Xbim.ModelGeometry.Scene          ~> 5.1.437
 
 group Test
     framework: auto-detect
