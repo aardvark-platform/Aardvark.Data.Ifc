@@ -74,7 +74,7 @@ NUGET
       Aardvark.Base.FSharp (>= 5.2.19 < 5.3)
       FSharp.Core (>= 5.0)
       FsPickler (>= 5.3.2 < 5.4)
-    FSharp.Core (5.0.1)
+    FSharp.Core (8.0.200)
     FSharp.Data.Adaptive (1.2.15)
       FSharp.Core (>= 4.7)
       System.Reflection.Emit.Lightweight (>= 4.6)

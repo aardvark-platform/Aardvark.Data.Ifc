@@ -4,12 +4,8 @@ source https://api.nuget.org/v3/index.json
 
 nuget Aardvark.Build                    ~> 1.0.19
 
-nuget FSharp.Core                       >= 5.0.1 lowest_matching: true
-
 // Aardvark Base
 nuget Aardvark.Base                     ~> 5.2.4
-nuget Aardvark.Base.FSharp              ~> 5.2.4
-nuget Aardvark.Base.Incremental         ~> 5.2.4
 
 // Aardvark Algodat
 nuget Aardvark.Geometry.PolyMesh        ~> 5.3.0
