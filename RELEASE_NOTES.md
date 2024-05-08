@@ -1,3 +1,6 @@
+### 1.1.0-prerelease0001
+- xBIM v6 dev packages
+
 ### 1.0.2
 - Relaxed package version constraints
 
