@@ -184,7 +184,7 @@ NUGET
       Xbim.Common (>= 6.0.445)
       Xbim.Ifc2x3 (>= 6.0.445)
       Xbim.Ifc4 (>= 6.0.445)
-  remote: C:\xbim_V6
+  remote: https://nuget.pkg.github.com/aardvark-platform/index.json
     Xbim.Geometry (6.0.0-dev)
       Xbim.Geometry.Engine.Interop (>= 6.0.0-dev)
       Xbim.ModelGeometry.Scene (>= 6.0.0-dev)
@@ -199,6 +199,7 @@ NUGET
       Xbim.Essentials (>= 6.0.414-develop)
 
 GROUP Test
+STORAGE: NONE
 RESTRICTION: == net472
 NUGET
   remote: https://api.nuget.org/v3/index.json
