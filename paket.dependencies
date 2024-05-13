@@ -1,4 +1,4 @@
-framework: auto-detect
+framework: net472, net6.0
 storage: none
 source https://api.nuget.org/v3/index.json
 source https://nuget.pkg.github.com/aardvark-platform/index.json
@@ -27,16 +27,16 @@ nuget Xbim.Geometry                     ~> 6.0.0-dev
 nuget Xbim.Geometry.Engine.Interop      ~> 6.0.0-dev
 nuget Xbim.ModelGeometry.Scene          ~> 6.0.0-dev
 
-nuget Microsoft.Extensions.Logging                          >= 2.1.1 lowest_matching: true             
-nuget Microsoft.Extensions.Logging.Abstractions             >= 2.1.1 lowest_matching: true
-nuget Microsoft.Extensions.Configuration.Abstractions       >= 2.1.1 lowest_matching: true
-nuget Microsoft.Extensions.Configuration.Binder             >= 2.1.1 lowest_matching: true
-nuget Microsoft.Extensions.DependencyInjection.Abstractions >= 2.1.1 lowest_matching: true
-nuget Microsoft.Extensions.Options                          >= 2.1.1 lowest_matching: true
-nuget Microsoft.Extensions.Primitives                       >= 2.1.1 lowest_matching: true 
+nuget Microsoft.Extensions.Logging                          >= 6.0.0 lowest_matching: true
+nuget Microsoft.Extensions.Logging.Abstractions             >= 6.0.0 lowest_matching: true
+nuget Microsoft.Extensions.Configuration.Abstractions       >= 6.0.0 lowest_matching: true
+nuget Microsoft.Extensions.Configuration.Binder             >= 6.0.0 lowest_matching: true
+nuget Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0 lowest_matching: true
+nuget Microsoft.Extensions.Options                          >= 6.0.0 lowest_matching: true
+nuget Microsoft.Extensions.Primitives                       >= 6.0.0 lowest_matching: true
 
 group Test
-    framework: auto-detect
+    framework: net6.0
     storage: none
     source https://api.nuget.org/v3/index.json
 
