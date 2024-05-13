@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - master
-      - newbuild
+      - xbim_v6_dev
     paths:
       - RELEASE_NOTES.md
       - .github/workflows/publish.yml
@@ -11,17 +11,23 @@ jobs:
   pack:
     name: Package
     runs-on: windows-latest
-    steps:  
+    steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install Dotnet
         uses: actions/setup-dotnet@v3
         with:
           global-json-file: global.json
       - name: Restore Tools
         run: dotnet tool restore
+      - name: Add Paket credentials
+        run: dotnet paket config add-token https://nuget.pkg.github.com/aardvark-platform/index.json ${{ secrets.GITHUB_TOKEN }}
       - name: Restore
         run: dotnet paket restore
+      - name: Build
+        run: dotnet build src\Aardvark.Data.Ifc.sln
+      - name: Test
+        run: dotnet test src\Aardvark.Data.Ifc.sln
       - name: Pack
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
